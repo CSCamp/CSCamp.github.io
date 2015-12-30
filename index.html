@@ -1,49 +1,431 @@
-<!DOCTYPE html>
-	<head>
-		<meta charset="utf-8">
-		<title>Computer Science Camp</title>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="styles.css">
-		<script src="processing.js"></script>
-	</head>
-	<body>
-		<header>
-			<h1>Computer Science Camp</h1>
-			<h3>Java, Processing, GitHub and Arduinos</h3>
-		</header>
-			<section id="content">
-            <canvas id="RotatingEllipse/RotatingEllipse" data-processing-sources="RotatingEllipse/RotatingEllipse.pde">
-				</canvas>
-				
-
-                        		<h3>Day One</h3>
-					<ul>
-					<li><a href="CSCamp.pptx">Powerpoint</a></li>
-					<li><a href="https://github.com/CSCamp/OlympicRings">Olympic Rings</a></li>
-					<li><a href="https://github.com/CSCamp/Penguin">Penguin</a></li>
-					<li><a href="https://github.com/CSCamp/Animation">Animation</a></li>
-					<li><a href="https://github.com/CSCamp/UserInput">User Input</a></ul>
-
-				<h3>Day Two</h3>
-					<ul>
-					<li>Ticklish Penguin</li>
-					<li>Etch A Sketch</li>
-					<li>Magic Eight Ball</li>
-					<li>Pong</li>
-					<li>Optional: Breakout</ul>
-
-				<h3>Day Three</h3><ul>
-				<li>Arduinos!</li></ul>
-
-			<h3>Day Four</h3><ul>
-				<li>Rogue Making!</li></ul>
-	
-			</section>
-	    <footer>
-		    <a href="mailto:simona1@sfusd.edu">Art Simon</a><br>
-            Computer Science and Robotics instructor<br>
-            Lowell High School <br>
-            San Francisco, CA
-	    </footer>
-	</body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Computer Science Camp</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1344.72">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.2px; font: 12.0px Consolas; color: #333333; -webkit-text-stroke: #333333}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; line-height: 18.0px; font: 12.0px Consolas; color: #000000; color: rgba(0, 0, 0, 0.3); -webkit-text-stroke: rgba(0, 0, 0, 0.3); min-height: 14.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.2px; font: 12.0px Consolas; color: #63a35c; -webkit-text-stroke: #63a35c}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.2px; font: 12.0px Consolas; color: #795da3; -webkit-text-stroke: #795da3}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.2px; font: 12.0px Consolas; color: #183691; -webkit-text-stroke: #183691}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.2px; font: 12.0px Consolas; color: #333333; -webkit-text-stroke: #333333; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+    span.s2 {font-kerning: none; color: #333333; -webkit-text-stroke: 0px #333333}
+    span.s3 {font-kerning: none; color: #63a35c; -webkit-text-stroke: 0px #63a35c}
+    span.s4 {font-kerning: none; color: #183691; -webkit-text-stroke: 0px #183691}
+    span.s5 {font-kerning: none; color: #795da3; -webkit-text-stroke: 0px #795da3}
+    span.Apple-tab-span {white-space:pre}
+    table.t1 {background-color: #ffffff; border-collapse: collapse}
+    td.td1 {width: 119.0px; padding: 0.0px 10.0px 0.0px 10.0px}
+    td.td2 {width: 119.0px; min-width: 50.0px; border-style: solid; border-width: 0.0px 1.0px 0.0px 0.0px; border-color: #eeeeee #eeeeee #eeeeee #eeeeee; padding: 0.0px 10.0px 0.0px 10.0px}
+    td.td3 {width: 820.0px; padding: 0.0px 10.0px 0.0px 10.0px}
+  </style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td1">
+        <p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p3"><span class="s2"><span class="Apple-tab-span">	</span>&lt;</span><span class="s1">head</span><span class="s2">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p4"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">meta</span><span class="s2"> </span><span class="s1">charset</span><span class="s2">=</span><span class="s4">"utf-8"</span><span class="s2">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">title</span><span class="s1">&gt;Computer Science Camp&lt;/</span><span class="s3">title</span><span class="s1">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p5"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">link</span><span class="s2"> </span><span class="s5">href</span><span class="s2">=</span><span class="s1">'http://fonts.googleapis.com/css?family=Open+Sans'</span><span class="s2"> </span><span class="s5">rel</span><span class="s2">=</span><span class="s1">'stylesheet'</span><span class="s2"> </span><span class="s5">type</span><span class="s2">=</span><span class="s1">'text/css'</span><span class="s2">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p5"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">link</span><span class="s2"> </span><span class="s5">rel</span><span class="s2">=</span><span class="s1">"stylesheet"</span><span class="s2"> </span><span class="s5">href</span><span class="s2">=</span><span class="s1">"styles.css"</span><span class="s2">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p5"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">script</span><span class="s2"> </span><span class="s5">src</span><span class="s2">=</span><span class="s1">"processing.js"</span><span class="s2">&gt;&lt;/</span><span class="s3">script</span><span class="s2">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>&lt;/</span><span class="s3">head</span><span class="s1">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p3"><span class="s2"><span class="Apple-tab-span">	</span>&lt;</span><span class="s1">body</span><span class="s2">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p3"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s1">header</span><span class="s2">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">h1</span><span class="s1">&gt;Computer Science Camp&lt;/</span><span class="s3">h1</span><span class="s1">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">h3</span><span class="s1">&gt;Java, Processing, GitHub and Arduinos&lt;/</span><span class="s3">h3</span><span class="s1">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p3"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/</span><span class="s1">header</span><span class="s2">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p5"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">section</span><span class="s2"> </span><span class="s5">id</span><span class="s2">=</span><span class="s1">"content"</span><span class="s2">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p5"><span class="s2"><span class="Apple-converted-space">            </span>&lt;</span><span class="s3">canvas</span><span class="s2"> </span><span class="s5">id</span><span class="s2">=</span><span class="s1">"RotatingEllipse/RotatingEllipse"</span><span class="s2"> </span><span class="s5">data-processing-sources</span><span class="s2">=</span><span class="s1">"RotatingEllipse/RotatingEllipse.pde"</span><span class="s2">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/</span><span class="s3">canvas</span><span class="s1">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p6"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p6"><span class="s1"></span><br></p>
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">                        <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;</span><span class="s3">h3</span><span class="s1">&gt;Day One&lt;/</span><span class="s3">h3</span><span class="s1">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">ul</span><span class="s1">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">li</span><span class="s1">&gt;&lt;</span><span class="s3">a</span><span class="s1"> </span><span class="s5">href</span><span class="s1">=</span><span class="s4">"CSCamp.pptx"</span><span class="s1">&gt;Powerpoint&lt;/</span><span class="s3">a</span><span class="s1">&gt;&lt;/</span><span class="s3">li</span><span class="s1">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p5"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">li</span><span class="s2">&gt;&lt;</span><span class="s3">a</span><span class="s2"> </span><span class="s5">href</span><span class="s2">=</span><span class="s1">"https://github.com/CSCamp/OlympicRings"</span><span class="s2">&gt;Olympic Rings&lt;/</span><span class="s3">a</span><span class="s2">&gt;&lt;/</span><span class="s3">li</span><span class="s2">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p5"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">li</span><span class="s2">&gt;&lt;</span><span class="s3">a</span><span class="s2"> </span><span class="s5">href</span><span class="s2">=</span><span class="s1">"https://github.com/CSCamp/Penguin"</span><span class="s2">&gt;Penguin&lt;/</span><span class="s3">a</span><span class="s2">&gt;&lt;/</span><span class="s3">li</span><span class="s2">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p5"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">li</span><span class="s2">&gt;&lt;</span><span class="s3">a</span><span class="s2"> </span><span class="s5">href</span><span class="s2">=</span><span class="s1">"https://github.com/CSCamp/Animation"</span><span class="s2">&gt;Animation&lt;/</span><span class="s3">a</span><span class="s2">&gt;&lt;/</span><span class="s3">li</span><span class="s2">&gt;&lt;/</span><span class="s3">ul</span><span class="s2">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p6"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p6"><span class="s1"></span><br></p>
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">h3</span><span class="s1">&gt;Day Two&lt;/</span><span class="s3">h3</span><span class="s1">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">ul</span><span class="s1">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p5"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">li</span><span class="s2">&gt;&lt;</span><span class="s3">a</span><span class="s2"> </span><span class="s5">href</span><span class="s2">=</span><span class="s1">"https://github.com/CSCamp/UserInput"</span><span class="s2">&gt;User Input&lt;/</span><span class="s3">a</span><span class="s2">&gt;&lt;/</span><span class="s3">li</span><span class="s2">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p5"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">li</span><span class="s2">&gt;&lt;</span><span class="s3">a</span><span class="s2"> </span><span class="s5">href</span><span class="s2">=</span><span class="s1">"https://github.com/CSCamp/TicklishPenguin"</span><span class="s2">&gt;Ticklish Penguin&lt;/</span><span class="s3">a</span><span class="s2">&gt;&lt;/</span><span class="s3">li</span><span class="s2">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p5"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">li</span><span class="s2">&gt;&lt;</span><span class="s3">a</span><span class="s2"> </span><span class="s5">href</span><span class="s2">=</span><span class="s1">"https://github.com/CSCamp/EtchASketch"</span><span class="s2">&gt;Etch A Sketch&lt;/</span><span class="s3">a</span><span class="s2">&gt;&lt;/</span><span class="s3">li</span><span class="s2">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p5"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">li</span><span class="s2">&gt;&lt;</span><span class="s3">a</span><span class="s2"> </span><span class="s5">href</span><span class="s2">=</span><span class="s1">"https://github.com/CSCamp/Tron"</span><span class="s2">&gt;Tron&lt;/</span><span class="s3">a</span><span class="s2">&gt;&lt;/</span><span class="s3">li</span><span class="s2">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p6"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p6"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/</span><span class="s3">ul</span><span class="s1">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p6"><span class="s1"></span><br></p>
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">h3</span><span class="s1">&gt;Day Three&lt;/</span><span class="s3">h3</span><span class="s1">&gt;&lt;</span><span class="s3">ul</span><span class="s1">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">li</span><span class="s1">&gt;Arduinos!&lt;/</span><span class="s3">li</span><span class="s1">&gt;&lt;/</span><span class="s3">ul</span><span class="s1">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p6"><span class="s1"></span><br></p>
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">h3</span><span class="s1">&gt;Day Four&lt;/</span><span class="s3">h3</span><span class="s1">&gt;&lt;</span><span class="s3">ul</span><span class="s1">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;</span><span class="s3">li</span><span class="s1">&gt;Rogue Making!&lt;/</span><span class="s3">li</span><span class="s1">&gt;&lt;/</span><span class="s3">ul</span><span class="s1">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p6"><span class="s1"><span class="Apple-tab-span">	</span></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p3"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/</span><span class="s1">section</span><span class="s2">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;</span><span class="s3">footer</span><span class="s1">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p5"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;</span><span class="s3">a</span><span class="s2"> </span><span class="s5">href</span><span class="s2">=</span><span class="s1">"mailto:simona1@sfusd.edu"</span><span class="s2">&gt;Art Simon&lt;/</span><span class="s3">a</span><span class="s2">&gt;&lt;</span><span class="s3">br</span><span class="s2">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>Computer Science and Robotics instructor&lt;</span><span class="s3">br</span><span class="s1">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>Lowell High School &lt;</span><span class="s3">br</span><span class="s1">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>San Francisco, CA</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;/</span><span class="s3">footer</span><span class="s1">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>&lt;/</span><span class="s3">body</span><span class="s1">&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p3"><span class="s2">&lt;/</span><span class="s1">html</span><span class="s2">&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
 </html>
